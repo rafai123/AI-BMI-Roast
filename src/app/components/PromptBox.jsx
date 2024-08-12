@@ -61,7 +61,7 @@ export const PromptBox = () => {
 
   return (
     <>
-      <div className="w-full lg:w-[90%] xlg:w-[65%] min-h-[50vh] text-white mt-10 p-5 prompt-border rounded-xl flex flex-col lg:flex-row justify-between md:justify-between">
+      <div className="w-full lg:w-[90%] xlg:w-[65%] min-h-[50vh] text-white mt-10 p-5 prompt-border rounded-xl flex flex-col lg:flex-row justify-between mx-auto">
         <div className="container flex flex-col mb-5 lg:w-4/12 lg:mb-0 lg:me-5">
           <div className="border-b-2 border-slate-800 pb-3 mb-2">
             <p>Nama</p>
@@ -79,10 +79,10 @@ export const PromptBox = () => {
           <div className="border-b-2 border-slate-800 pb-3 mb-2">
             <p>Jenis Kelamin</p>
             <div className="flex rounded-xl border-slate-700 mt-1  ">
-              <div className={` ${classMale} hover:cursor-pointer ease-in duration-300 text-center rounded-lg w-1/2 px-10 py-2`} onClick={handleMaleClick}>
+              <div className={` ${classMale} hover:cursor-pointer ease-in duration-300 text-center rounded-lg w-1/2 px-5 py-2`} onClick={handleMaleClick}>
                 Laki-Laki
               </div>
-              <div className={` ${classFemale} hover:cursor-pointer ease-in duration-300 text-center rounded-lg w-1/2 px-10 py-2`} onClick={handleFemaleClick}>
+              <div className={` ${classFemale} hover:cursor-pointer ease-in duration-300 text-center rounded-lg w-1/2 px-5 py-2`} onClick={handleFemaleClick}>
                 Perempuan
               </div>
             </div>
@@ -94,7 +94,7 @@ export const PromptBox = () => {
           </div>
         </div>
         {/* <div className="container flex justify-center items-center "> */}
-        <div className="h-full w-full lg:w-8/12 border-slate-500 border-[2px] rounded-xl bg-[#1E293B] p-3 text-slate-300">{result}</div>
+        <div className="min-h-full w-full lg:w-8/12 border-slate-500 border-[2px] rounded-xl bg-[#1E293B] p-3 text-slate-300">{result}</div>
         {/* </div> */}
       </div>
     </>
