@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Sure! Here’s a `README.md` file for your BMI roasting application:
 
-## Getting Started
+```markdown
+# BMI Roast Application
 
-First, run the development server:
+This is a playful and fun application that provides comical roasting based on a user's BMI. It is built using Next.js for the frontend and uses Gemini AI for generating the roast content.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Features
+
+- User input for name, weight, height, and gender
+- Generation of playful roast messages based on user input
+- Calculation and display of BMI and its category
+- Responsive design for seamless use across devices
+
+## Technology Stack
+
+- **Frontend**: Next.js, React
+- **Backend**: Next.js API Routes
+- **AI Integration**: Gemini AI
+
+## Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/rafai123/AI-BMI-Roast
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd AI-BMI-Roast
+    ```
+
+3. Install the dependencies:
+
+    ```bash
+    npm install
+    ```
+
+## Usage
+
+1. Start the development server:
+
+    ```bash
+    npm run dev
+    ```
+
+2. Open your browser and navigate to `http://localhost:3000`.
+
+3. Fill in your name, weight, height, and gender in the form and submit to receive a playful roast based on your BMI.
+
+## Project Structure
+
+- `pages/api/geminiBackend.js`: Handles API requests and communicates with Gemini AI.
+- `components/PromptBox.jsx`: Handles user input and displays the generated roast message.
+
+## Example Request
+
+The backend receives a POST request with the following data structure:
+
+```json
+{
+  "name": "Rafai",
+  "weight": "45kg",
+  "height": "170cm",
+  "gender": "Laki-Laki"
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The backend then sends a prompt to Gemini AI and returns the generated roast message.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Contributing
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Feel free to open issues or submit pull requests if you find any bugs or have new features to propose.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+©2024 Created playfully by Rafai.
+```
