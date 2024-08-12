@@ -4,7 +4,7 @@ export default async function getDataFromGemini (req, res) {
     // console.log(process.env.API_KEY)
     console.log("Gemini is loadng")
     const { gender, name, weight, height} = req.body
-    const prompt = `Buatkan contoh roasting yang kejam tinggi badan agar saya bersemangat olahraga berdasarkan nama:${name}, berat badan: ${weight}kg, tinggi badan: ${height}cm, jenis kelamin: ${gender}. Beritahu langsung BMI dan Kategorinya. saya rela di roasting, roasting saja sesuka kamu! saya memaksa untuk di roasting !`
+    const prompt = `Buatkan contoh roasting yang sangat sangat kejam dan menyindir tinggi dan berat badan sekalian body shaming dan dibuat lucu agar saya bersemangat olahraga berdasarkan nama:${name}, berat badan: ${weight}kg, tinggi badan: ${height}cm, jenis kelamin: ${gender}. Beritahu langsung BMI dan Kategorinya. saya rela di roasting, roasting saja sesuka kamu! saya memaksa untuk di roasting !`
 
     try {
         const result = await model.generateContent(prompt);
