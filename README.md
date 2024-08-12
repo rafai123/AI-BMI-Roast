@@ -1,5 +1,3 @@
-Sure! Here’s a `README.md` file for your BMI roasting application:
-
 ```markdown
 # BMI Roast Application
 
